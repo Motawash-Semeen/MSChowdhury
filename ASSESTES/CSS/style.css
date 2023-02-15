@@ -1,0 +1,232 @@
+/* COMMON CSS START */
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*===== Colors =====*/
+  --hue-color: 242;
+
+  /* HSL Color Mode */
+  --skin-color: hsl(342, 92%, 46%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 85%);
+  --body-color: hsl(var(--hue-color), 19%, 5%);
+  --box-color: hsl(var(--hue-color), 14%, 10%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+  /*===== Font and Typography =====*/
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --biggest-font-size: 3rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+
+  /*===== Font Weight =====*/
+  --font-medium: 500;
+  --font-bold: 600;
+
+  /*===== Margenes Bottom =====*/
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*===== Z Index =====*/
+  --z-fixed: 10;
+  --z-modal: 100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+btn:focus,
+a:focus {
+  outline: none;
+}
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+input:focus {
+  outline: 0 !important;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+.clr {
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding: 0px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: start;
+  height: 100%;
+}
+.red-clr{
+    color: hsl(342,100%,50%);
+}
+.pt--30{
+    padding-top: 30px;
+}
+
+/* COMMON CSS END */
+
+.main {
+  background-color: hsl(214, 10%, 14%);
+}
+.row {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+.right_div {
+  width: 48%;
+  position: sticky;
+  top: 0;
+}
+.left_div {
+  width: 48%;
+}
+.thumbnail{
+    width: 25%;
+    
+}
+.thumbnail img{
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 5px solid hsl(210,9%,22%);
+}
+.banner-details-wrapper-sticky .banner-title-area .title {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.19;
+    margin-bottom: 22px;
+}
+.banner-details-wrapper-sticky .banner-title-area p {
+    font-size: 18px;
+    color: #878e99;
+    line-height: 1.6;
+}
+.pt--60 {
+    padding-top: 60px;
+}
+
+.sticky-top-slider a.rn-btn, .sticky-top-slider button.rn-btn {
+    font-size: 18px;
+}
+.button-group a.rn-btn {
+    margin: 15px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+a.rn-btn, button.rn-btn {
+    border-radius: 6px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    transition: 0.4s;
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0 none;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+a.rn-btn, button.rn-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    list-style: none;
+    text-decoration: none;
+    color: #ff014f;
+}
+a.rn-btn::before, button.rn-btn::before {
+    content: "";
+    position: absolute;
+    transition: 0.4s;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right bottom, #212428, #16181c);
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+a.rn-btn:hover::before{
+    opacity: 1;
+    transform: translateY(10%);
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
+}
+a.rn-btn:hover{
+    opacity: 1;
+    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
+    -moz-transform: translateY(-10%);
+    -ms-transform: translateY(-10%);
+    -o-transform: translateY(-10%);
+}
