@@ -101,7 +101,7 @@ body {
 .d-flex {
   display: flex;
   flex-wrap: nowrap;
-  align-items: start;
+  align-items: center;
   height: 100%;
 }
 .red-clr{
@@ -123,7 +123,7 @@ body {
   padding-bottom: 50px;
 }
 .container {
-  width: 95%;
+  width: 70%;
   margin: auto;
 }
 .right_div {
@@ -175,6 +175,11 @@ body {
     -ms-transition: all 0.4s;
     -o-transition: all 0.4s;
 }
+a.rn-btn span, button.rn-btn span{
+  color: #ff014f;
+  font-weight: 500;
+  z-index: 9999;
+}
 a.rn-btn, button.rn-btn {
     border-radius: 6px;
     background: linear-gradient(145deg, #1e2024, #23272b);
@@ -182,7 +187,6 @@ a.rn-btn, button.rn-btn {
     transition: 0.4s;
     position: relative;
     z-index: 2;
-    font-size: 14px;
     font-weight: 500;
     border: 0 none;
     -webkit-transition: 0.4s;
@@ -216,17 +220,63 @@ a.rn-btn::before, button.rn-btn::before {
 }
 a.rn-btn:hover::before{
     opacity: 1;
-    transform: translateY(10%);
-    -webkit-transform: translateY(10%);
-    -moz-transform: translateY(10%);
-    -ms-transform: translateY(10%);
-    -o-transform: translateY(10%);
 }
 a.rn-btn:hover{
-    opacity: 1;
     transform: translateY(-10%);
     -webkit-transform: translateY(-10%);
     -moz-transform: translateY(-10%);
     -ms-transform: translateY(-10%);
     -o-transform: translateY(-10%);
+}
+
+
+
+
+#about, #skill{
+  padding: 35px 40px 40px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+ .section-height::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  filter: blur(1px);
+  z-index: -1;
+}
+
+h5.title {
+  position: relative;
+  margin-bottom: 35px;
+  font-size: 30px;
+  text-align: left;
+  color: white;
+}
+
+ .inner p.about-disc {
+  font-size: 18px;
+  color: #878e99;
+  line-height: 28px;
+}
+ .inner p:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+ h5.title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #121415;
+  bottom: -18px;
+  left: 0;
 }
