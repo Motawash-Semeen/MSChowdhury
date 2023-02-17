@@ -12,7 +12,10 @@
   --box-color: hsl(var(--hue-color), 14%, 10%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
-
+  --bg-body: #dff9fb;
+  --bg-nav: #220455;
+  --color-nav: #644c89;
+  --color-nav-active: #fff;
   /*===== Font and Typography =====*/
   --body-font: "Poppins", sans-serif;
 
@@ -865,3 +868,10 @@ button.rn-btn span {
 .main{
   position: relative;
 }
+
+
+
+
+
+
+
