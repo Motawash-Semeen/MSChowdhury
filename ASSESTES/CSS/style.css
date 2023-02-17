@@ -263,6 +263,63 @@ button.rn-btn span {
   -ms-transform: translateY(-10%);
   -o-transform: translateY(-10%);
 }
+.social_links{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.links_item{
+  width: 10%;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.links_item:hover i{
+  color: #ff014f;
+
+}
+.links_item i{
+  color: white;
+  font-size: 2.5rem;
+  transition: all 0.4s;
+}
+
+.right_div .button-group a.rn-btn:nth-child(1) {
+  margin-left: 0px;
+}
+.links_txt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #ff014f;
+  font-size: 19px;
+}
+.arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+
+
+
+
+
+
+
+
 
 #about,
 #skill, #services, #portfolio, #Blog, #testimonial, #contact {
