@@ -122,6 +122,18 @@ body {
 .mr-25{
   margin-right: 25px;
 }
+html {
+  scroll-behavior: smooth;
+}
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
 /* COMMON CSS END */
 
 .main {
@@ -778,7 +790,7 @@ button.rn-btn span {
   position: fixed;
   bottom: 8%;
   right: 2%;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 40px;
@@ -787,6 +799,7 @@ button.rn-btn span {
   border-radius: 50%;
   background-color: #ff014f;
   color: white;
+  cursor: pointer;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
