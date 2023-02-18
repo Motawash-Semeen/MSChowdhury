@@ -395,7 +395,10 @@ h5.title::after {
 .skill-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
+}
+.secondary-skill.skill-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .skill-list li {
   width: 81px;
@@ -1112,4 +1115,279 @@ button.rn-btn span {
   visibility: hidden;
   transition: 0.5s;
   transform: translateX(100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1305px) {
+  .container {
+    width: 88%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .right_div{
+    width: 49%;
+  }
+  .left_div{
+    width: 49%;
+  }
+  .banner-details-wrapper-sticky .banner-title-area .title {
+    font-size: 52px;
+}
+.secondary-skill.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.services_item {
+  padding: 20px 15px;
+}
+.top_button {
+  z-index: 9999;
+}
+}
+@media screen and (max-width: 1024px) {
+  .secondary-skill.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+  }
+  .skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+  .banner-details-wrapper-sticky .banner-title-area .title {
+    font-size: 45px;
+}
+.services_item {
+  padding: 10px 10px;
+}
+}
+@media screen and (max-width: 992px) {
+  .services_name {
+    font-size: 14px;
+  }
+  .button-group .rn-btn:nth-child(2){
+    display: none;
+  }
+}
+@media screen and (max-width: 880px) {
+  .banner-details-wrapper-sticky .banner-title-area .title {
+    font-size: 40px;
+}
+.services_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 15px;
+}
+.services_item {
+  padding: 10px 10px;
+  width: 100%;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+}
+@media screen and (max-width: 773px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .row {
+    display: block; 
+}
+.right_div {
+  width: 90%;
+  margin: auto;
+  position: relative !important;
+  height: 100%;
+  top: 50px;
+  margin-bottom: 3rem;
+  display: block;
+}
+.left_div {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: block;
+}
+.banner-details-wrapper-sticky .banner-title-area .title {
+  font-size: 52px;
+}
+.button-group .rn-btn:nth-child(2){
+  display: inline-block;
+}
+.secondary-skill.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+.skill-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+.services_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.services_item {
+  padding: 30px 20px;
+  width: 100%;
+}
+.thumbnail {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+}
+@media screen and (max-width: 625px) {
+  .skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+  .secondary-skill.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  }
+  .services_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+  .services_item {
+    padding: 20px 10px;
+    width: 100%;
+  }
+  .banner-details-wrapper-sticky .banner-title-area .title {
+    font-size: 45px;
+  }
+  .links_item i {
+    font-size: 2rem;
+}
+.thumbnail {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+}
+@media screen and (max-width: 585px) {
+  .banner-details-wrapper-sticky .banner-title-area .title {
+    font-size: 38px;
+  }
+  .right_div .sticky-top-slider a.rn-btn, .right_div .sticky-top-slider button.rn-btn {
+    font-size: 16px;
+}
+.right_div a.rn-btn, .right_div button.rn-btn {
+  padding: 15px 25px;
+}
+.links_txt {
+
+  font-size: 16px;
+}
+.card-list li a {
+  font-size: 16px;
+}
+.card-list svg {
+  width: 18px;
+  height: 18px;
+}
+.thumbnail {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+.banner-details-wrapper-sticky .banner-title-area p {
+  font-size: 16px;
+}
+.inner p.about-disc {
+  font-size: 16px;
+}
+.testimonial_description{
+  font-size: 14px;
+}
+.testimonial_profile-detail{
+  font-size: 14px;
+}
+.right_div .button-group a.rn-btn {
+  margin: 10px;
+}
+.button_testi {
+  top: 10%;
+  right: 7%;
+}
+}
+@media screen and (max-width: 480px) {
+  .button-group .rn-btn:nth-child(2){
+    display: none;
+  }
+  .button_testi {
+    top: 10%;
+    right: 5%;
+}
+.services_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.button_testi {
+  top: 25%;
+  right: 7%;
+}
+.card-list li a {
+  font-size: 14px;
+}
+.card-list li a svg{
+  display: none !important;
+}
+.skill-list {
+  grid-template-columns: 1fr 1fr;
+}
+.secondary-skill.skill-list {
+  grid-template-columns: 1fr 1fr 1fr  ;
+}
+.banner-details-wrapper-sticky .banner-title-area p {
+  font-size: 14px;
+}
+.banner-details-wrapper-sticky .banner-title-area .title {
+  font-size: 30px;
+}
+.social_links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+h5.title {
+  position: relative;
+  margin-bottom: 35px;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+}
+.rn-right-Project .Project-button {
+  font-size: 12px;
+}
+.inner p.about-disc {
+  font-size: 14px;
+}
+.skill-item span.title {
+  font-size: 12px;
+
+}
 }
