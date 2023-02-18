@@ -524,10 +524,11 @@ h5.title::after {
 .button_testi{
   display: flex;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10%;
+  right: 10%;
   color: white;
   font-size: 20px;
+  z-index: 9999;
 }
 .prev_testi:hover , .next_testi:hover{
 color: #ff014f;
