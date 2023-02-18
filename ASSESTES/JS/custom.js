@@ -72,3 +72,9 @@ function activeWork(){
     this.classList.add('active-work')
 }
 linkWork.forEach(l => l.addEventListener("click",activeWork))
+
+
+
+function hideproject(){
+  document.querySelector(".demo-modal-area").classList.add("d-none");
+}
