@@ -175,7 +175,7 @@ body{
 .right_div {
   width: 48%;
   position: sticky !important;
-  top: 100px;
+  top: 120px;
   z-index: 10;
   height: 90vh;
 }
@@ -214,11 +214,131 @@ body{
   padding-top: 60px;
 }
 
+
+
+
+
+
+.header {
+  position: fixed;
+  left: 30px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  opacity: 1;
+  transition: opacity .3s;
+  -webkit-transition: opacity .3s;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+
+.header ul.icon-menu li.icon-box:focus, .header ul.icon-menu li.icon-box:hover, .portfolio-tab-list li:focus, .portfolio-tab-list li:hover {
+  border: none;
+  outline: none;
+}
+.header ul.icon-menu li.icon-box {
+  width: 50px;
+  height: 50px;
+  list-style: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  margin: 20px 0;
+  border-radius: 50%;
+  background: #2b2a2a;
+  cursor: pointer;
+}
+
+.header ul.icon-menu li.icon-box i {
+  color: #ddd;
+  font-size: 19px;
+  transition: .3s;
+  width: 100%;
+}
+.header .icon-box i.fa {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+}
+.header .icon-menu .icon-box a {
+  width: 100%;
+  height: 100%;
+}
+.header .icon-menu i {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 35px;
+  top: 15px;
+  width: 100%;
+}
+.header ul li:hover.icon-box{
+ background-color: #ff014f;
+}
+.active_nav{
+  color: #ff014f !important;
+  background-color: white !important;
+}
+.header ul li .tooltip {
+  position: absolute;
+  top: 8px;
+  left: 63px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #121415;
+  font-weight: bold;
+  display: none;
+}
+
+.header ul li:hover .tooltip{
+   display: block;
+}
+
+.header ul li .tooltip:before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  transform: translateX(-146%) rotate(90deg);
+  border-top: 10px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  -webkit-transform: translateX(-146%) rotate(90deg);
+  -moz-transform: translateX(-146%) rotate(90deg);
+  -ms-transform: translateX(-146%) rotate(90deg);
+  -o-transform: translateX(-146%) rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .right_div .sticky-top-slider a.rn-btn,
 .right_div .sticky-top-slider button.rn-btn {
   font-size: 18px;
 }
 .right_div .button-group a.rn-btn {
+  z-index: 10;
   margin: 15px;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
@@ -233,7 +353,7 @@ body{
 button.rn-btn span {
   color: #ff014f;
   font-weight: 500;
-  z-index: 9999;
+z-index: -1;
 }
 .right_div a.rn-btn,
 .right_div button.rn-btn {
@@ -1166,12 +1286,19 @@ button.rn-btn span {
   }
 }
 @media screen and (max-width: 1200px) {
+  .header {
+    left: 10px;
+}
   .right_div{
-    width: 49%;
+    width: 48%;
   }
   .left_div{
     width: 49%;
   }
+  .row {
+    justify-content: center;
+    gap: 10px;
+}
   .banner-details-wrapper-sticky .banner-title-area .title {
     font-size: 52px;
 }
@@ -1246,7 +1373,8 @@ button.rn-btn span {
   height: 100%;
   top: 50px;
   margin-bottom: 3rem;
-  display: block;
+  display: block !important;
+  z-index: 1;
 }
 .left_div {
   width: 90%;
@@ -1415,5 +1543,33 @@ h5.title {
 .skill-item span.title {
   font-size: 12px;
 
+}
+.header {
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.27);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.5px);
+-webkit-backdrop-filter: blur(6.5px);
+  display: inline-block;
+  padding: 0px 5px !important;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.icon-box h2{
+  display: none !important;
+}
+.icon-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
 }
 }

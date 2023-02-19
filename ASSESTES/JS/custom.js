@@ -98,3 +98,20 @@ function showPro(){
   document.querySelector(".top_button").classList.add("d-none");
   document.querySelector(".rn-right-Project").classList.add("d-none");
 }
+
+
+
+
+// Add active class to the current button (highlight it)
+var header = document.querySelector(".header ul");
+var btns = header.getElementsByClassName("icon-box");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active_nav");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active_nav", "");
+  }
+  this.className += " active_nav";
+
+  });
+}
