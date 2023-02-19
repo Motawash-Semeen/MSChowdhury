@@ -1,3 +1,14 @@
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.querySelector(".loader").style.display = "none";
+  document.querySelector(".main").style.display = "block";
+}
+
 /*=============== INPUT ANIMATION ===============*/
 const inputs = document.querySelectorAll(".input");
 function focusFunc()
