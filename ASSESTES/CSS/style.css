@@ -1101,7 +1101,7 @@ textarea.input {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(145deg, #1e2024, #23272b);
+  background: linear-gradient(145deg, #ff014f, #e60045);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: 0.4s;
   z-index: 2;
@@ -1141,7 +1141,7 @@ textarea.input {
   color: white;
 }
 .demo-close-btn:hover i {
-  color: #ff014f;
+  color: white;
 }
 .section_title {
   text-align: center;
@@ -1204,6 +1204,20 @@ textarea.input {
     width: 88%;
     margin: auto;
   }
+  .work_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.demo-modal-area .wrapper .rn-modal-inner {
+  width: 94%;
+}
+.demo-modal-area .demo-close-btn {
+  right: 4%;
+  top: 17%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
 }
 @media screen and (max-width: 1200px) {
   .header {
@@ -1232,6 +1246,7 @@ textarea.input {
   .top_button {
     z-index: 9999;
   }
+  
 }
 @media screen and (max-width: 1024px) {
   .secondary-skill.skill-list {
@@ -1248,6 +1263,7 @@ textarea.input {
   .services_item {
     padding: 10px 10px;
   }
+
 }
 @media screen and (max-width: 992px) {
   .services_name {
@@ -1256,8 +1272,22 @@ textarea.input {
   .button-group .rn-btn:nth-child(2) {
     display: none;
   }
+  .demo-modal-area .demo-close-btn {
+    right: 4%;
+    top: 17%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 880px) {
+  .demo-modal-area .demo-close-btn {
+    right: 3%;
+    top: 15%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
   .banner-details-wrapper-sticky .banner-title-area .title {
     font-size: 40px;
   }
@@ -1279,6 +1309,11 @@ textarea.input {
   }
 }
 @media screen and (max-width: 773px) {
+
+  .work_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
   .container {
     width: 80%;
     margin: auto;
@@ -1360,6 +1395,7 @@ textarea.input {
     text-align: center;
     margin: auto;
   }
+
 }
 @media screen and (max-width: 585px) {
   .banner-details-wrapper-sticky .banner-title-area .title {
@@ -1407,8 +1443,26 @@ textarea.input {
     top: 10%;
     right: 7%;
   }
+  .work_container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+.section_title {
+  font-size: 1.85rem;
+}
+.work_item {
+  font-size: 15px;
+}
+.demo-modal-area .demo-close-btn {
+  right: 3%;
+  top: 15%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
 }
 @media screen and (max-width: 480px) {
+
   .button-group .rn-btn:nth-child(2) {
     display: none;
   }
