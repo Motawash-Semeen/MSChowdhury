@@ -112,6 +112,7 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active_nav", "");
   }
   this.className += " active_nav";
-
+  
   });
 }
+

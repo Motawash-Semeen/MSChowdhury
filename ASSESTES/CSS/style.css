@@ -281,6 +281,9 @@ body {
   color: #ff014f !important;
   background-color: white !important;
 }
+.active_navbr {
+  color: #ff014f !important;
+}
 .header ul li .tooltip {
   position: absolute;
   top: 8px;
@@ -669,7 +672,8 @@ h5.title::after {
   align-items: center;
 }
 .testimonial_profile .testi_user_pic {
-  width: 17%;
+  width: 15%;
+  margin-left: 2px;
 }
 .testimonial_profile .testimonial_profile-data {
   width: 78%;
@@ -690,8 +694,9 @@ h5.title::after {
   margin-bottom: 10px;
 }
 .testimonial_date {
-  margin: 10px 0px;
+  margin: 1rem 0px;
 }
+
 .mySwiper {
   display: flex;
 }
