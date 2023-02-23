@@ -1219,11 +1219,17 @@ textarea.input {
   padding: 15px;
   border-radius: 0.8rem;
   background: linear-gradient(145deg, #1e2024, #23272b);
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   -webkit-border-radius: 0.8rem;
   -moz-border-radius: 0.8rem;
   -ms-border-radius: 0.8rem;
   -o-border-radius: 0.8rem;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  cursor: pointer;
 }
 
 .certi_img img{
@@ -1234,12 +1240,17 @@ textarea.input {
   -ms-border-radius: 0.8rem;
   -o-border-radius: 0.8rem;
 }
+.certi_img {
+  transition: all 0.4s;
+}
 .certi_txt{
   color: white;
   padding-top: 15px;
 
 }
-
+.certi_item:hover .certi_img{
+opacity: 0.5;
+}
 
 
 
