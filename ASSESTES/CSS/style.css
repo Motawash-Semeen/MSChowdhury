@@ -1215,7 +1215,7 @@ textarea.input {
   gap: 10px;
 }
 .certi_item{
-  width: 48%;
+  width: 68%;
   padding: 15px;
   border-radius: 0.8rem;
   background: linear-gradient(145deg, #1e2024, #23272b);
@@ -1364,14 +1364,14 @@ textarea.input {
     width: 100%;
   }
   .container {
-    width: 90%;
+    width: 85%;
     margin: auto;
   }
   .centered {
     width: 100%;
   }
 }
-@media screen and (max-width: 773px) {
+@media screen and (max-width: 776px) {
   .work_container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -1606,4 +1606,27 @@ textarea.input {
     align-items: center;
     bottom: 0;
   }
+}
+@media screen and (max-width: 430px) {
+  .skill-list li {
+    width: 71px;
+    height: 71px;
+    line-height: 71px;
+    margin-bottom: 20px;
+    margin-left: 8%;
+}
+
+.top_button {
+  display: none !important;
+}
+.certi_item {
+  width: 95%;
+  font-size: 12px;
+}
+.skill-item{
+  width: 100%;
+}
+.skill-list li{
+  text-align: center;
+}
 }
