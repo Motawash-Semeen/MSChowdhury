@@ -343,8 +343,11 @@ body {
 .right_div a.rn-btn,
 .right_div button.rn-btn {
   border-radius: 6px;
-  background: linear-gradient(145deg, #1e2024, #23272b);
-  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
   transition: 0.4s;
   position: relative;
   z-index: 2;
@@ -1207,17 +1210,17 @@ textarea.input {
   .work_container {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-}
-.demo-modal-area .wrapper .rn-modal-inner {
-  width: 94%;
-}
-.demo-modal-area .demo-close-btn {
-  right: 4%;
-  top: 17%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-}
+  }
+  .demo-modal-area .wrapper .rn-modal-inner {
+    width: 94%;
+  }
+  .demo-modal-area .demo-close-btn {
+    right: 4%;
+    top: 17%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .header {
@@ -1246,7 +1249,6 @@ textarea.input {
   .top_button {
     z-index: 9999;
   }
-  
 }
 @media screen and (max-width: 1024px) {
   .secondary-skill.skill-list {
@@ -1263,7 +1265,6 @@ textarea.input {
   .services_item {
     padding: 10px 10px;
   }
-
 }
 @media screen and (max-width: 992px) {
   .services_name {
@@ -1309,11 +1310,10 @@ textarea.input {
   }
 }
 @media screen and (max-width: 773px) {
-
   .work_container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-}
+  }
   .container {
     width: 80%;
     margin: auto;
@@ -1395,7 +1395,6 @@ textarea.input {
     text-align: center;
     margin: auto;
   }
-
 }
 @media screen and (max-width: 585px) {
   .banner-details-wrapper-sticky .banner-title-area .title {
@@ -1446,23 +1445,22 @@ textarea.input {
   .work_container {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-}
-.section_title {
-  font-size: 1.85rem;
-}
-.work_item {
-  font-size: 15px;
-}
-.demo-modal-area .demo-close-btn {
-  right: 3%;
-  top: 15%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-}
+  }
+  .section_title {
+    font-size: 1.85rem;
+  }
+  .work_item {
+    font-size: 15px;
+  }
+  .demo-modal-area .demo-close-btn {
+    right: 3%;
+    top: 15%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 480px) {
-
   .button-group .rn-btn:nth-child(2) {
     display: none;
   }
