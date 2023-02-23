@@ -130,7 +130,22 @@ function showPro(){
 }
 
 
+var app = document.querySelector('.span');
 
+var typewriter = new Typewriter(app, {
+    loop: true,
+    cursor: "",
+});
+
+typewriter.typeString('Web Developer')
+    .pauseFor(2500)
+    .deleteChars(9)
+    .typeString('Designer')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('UI/UX Designer')
+    .pauseFor(2500)
+    .start();
 
 // Add active class to the current button (highlight it)
 var header = document.querySelector(".header ul");

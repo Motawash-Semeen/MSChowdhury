@@ -342,7 +342,6 @@ body {
 }
 .right_div a.rn-btn,
 .right_div button.rn-btn {
-  border-radius: 6px;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 6px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -991,8 +990,10 @@ textarea.input {
 }
 .rn-right-Project .Project-button {
   border-radius: 6px 0 0 6px;
-  background: linear-gradient(145deg, #1e2024, #23272b);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
   transition: var(--transition);
   position: relative;
   z-index: 2;
