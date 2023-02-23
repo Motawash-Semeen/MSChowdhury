@@ -448,7 +448,8 @@ body {
 #portfolio,
 #Blog,
 #testimonial,
-#contact {
+#contact,
+#certificate {
   padding: 35px 40px 40px;
   border-radius: 10px;
   margin-bottom: 50px;
@@ -641,7 +642,7 @@ h5.title::after {
 .inner {
   position: relative;
 }
-.button_testi {
+.button_testi, .button_cer {
   display: flex;
   position: absolute;
   top: 10%;
@@ -651,10 +652,11 @@ h5.title::after {
   z-index: 9999;
 }
 .prev_testi:hover,
-.next_testi:hover {
+.next_testi:hover, .prev_cer:hover,
+.next_cer:hover{
   color: #ff014f;
 }
-.prev_testi {
+.prev_testi, .prev_cer {
   padding: 10px 10px;
   background-color: hsl(214, 10%, 14%);
   margin-right: 10px;
@@ -662,7 +664,7 @@ h5.title::after {
   cursor: pointer;
   transition: all 0.4s;
 }
-.next_testi {
+.next_testi, .next_cer {
   padding: 10px 10px;
   background-color: hsl(214, 10%, 14%);
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
@@ -1195,6 +1197,65 @@ textarea.input {
   transition: 0.5s;
   transform: translateX(100px);
 }
+
+
+
+
+
+
+
+
+
+
+.certi_main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.certi_item{
+  width: 48%;
+  padding: 15px;
+  border-radius: 0.8rem;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+.certi_img img{
+  width: 100%;
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+.certi_txt{
+  color: white;
+  padding-top: 15px;
+
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
 
 @media screen and (max-width: 1500px) {
   .container {
