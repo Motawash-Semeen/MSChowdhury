@@ -1,7 +1,7 @@
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 2000);
+  myVar = setTimeout(showPage, 200);
 }
 
 function showPage() {
@@ -172,12 +172,6 @@ var modal = document.getElementById("myModal");
             modal.style.display="block";
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
-            //con.style.display="none"
-            // document.querySelector("#services").style.zIndex="0";
-            // document.querySelector("#portfolio").style.zIndex="0";
-            // document.querySelector("#Blog").style.zIndex="0";
-            // document.querySelector("#testimonial").style.zIndex="0";
-            // document.querySelector("#contact").style.zIndex="0";
           console.log(e.target, index);
         });
     })
@@ -189,3 +183,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+
+
+AOS.init();
