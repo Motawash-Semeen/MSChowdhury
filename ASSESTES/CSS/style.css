@@ -137,6 +137,14 @@ html {
   color: black;
   background: white;
 }
+
+.animate__animated.animate__fadeInLeft, .animate__bounce, .animate__pulse, .animate__zoomIn, .animate__fadeInUp, .animate__fadeInRightBig {
+  --animate-duration: 2s;
+}
+.animate__slideInLeft.animate__animated {
+  --animate-duration: 3s;
+}
+
 /* COMMON CSS END */
 
 .main {
@@ -1197,7 +1205,7 @@ textarea.input {
   border: 0px;
   background-color: rgb(33, 36, 40);
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   overflow: auto;
   opacity: 0;
   visibility: hidden;

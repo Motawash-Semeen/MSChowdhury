@@ -118,15 +118,15 @@ linkWork.forEach(l => l.addEventListener("click",activeWork))
 
 function hideproject(){
   document.querySelector(".demo-modal-area").classList.add("d-none");
-  document.querySelector(".container").classList.remove("d-none");
-  document.querySelector(".top_button").classList.remove("d-none");
-  document.querySelector(".rn-right-Project").classList.remove("d-none");
+  // document.querySelector(".container").classList.remove("d-none");
+  // document.querySelector(".top_button").classList.remove("d-none");
+  // document.querySelector(".rn-right-Project").classList.remove("d-none");
 }
 function showPro(){
   document.querySelector(".demo-modal-area").classList.remove("d-none");
-  document.querySelector(".container").classList.add("d-none");
-  document.querySelector(".top_button").classList.add("d-none");
-  document.querySelector(".rn-right-Project").classList.add("d-none");
+  // document.querySelector(".container").classList.add("d-none");
+  // document.querySelector(".top_button").classList.add("d-none");
+  // document.querySelector(".rn-right-Project").classList.add("d-none");
 }
 
 
