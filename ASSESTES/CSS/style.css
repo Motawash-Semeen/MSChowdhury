@@ -176,7 +176,7 @@ body {
   width: 48%;
   position: sticky !important;
   top: 120px;
-  z-index: 10;
+  z-index: 1;
   height: 90vh;
 }
 .position-sticky {
@@ -217,7 +217,6 @@ body {
 .header {
   position: fixed;
   left: 30px;
-  z-index: 9999;
   display: flex;
   align-items: center;
   top: 50%;
@@ -225,7 +224,7 @@ body {
   transition: opacity 0.3s;
   -webkit-transition: opacity 0.3s;
   transform: translateY(-50%);
-  z-index: 2;
+
 }
 
 .header ul.icon-menu li.icon-box:focus,
@@ -455,6 +454,13 @@ body {
   position: relative;
   z-index: 1;
 }
+#services,
+#portfolio,
+#Blog,
+#testimonial,
+#contact {
+ z-index: 0 !important;
+}
 
 .section-height::after {
   position: absolute;
@@ -467,7 +473,7 @@ body {
   background-color: linear-gradient(145deg, #1e2024, #23272b);
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
   filter: blur(1px);
-  z-index: -1;
+  z-index: -10;
 }
 
 h5.title {
@@ -648,7 +654,7 @@ h5.title::after {
   right: 10%;
   color: white;
   font-size: 20px;
-  z-index: 9999;
+  z-index: 99;
 }
 .prev_testi:hover,
 .next_testi:hover, .prev_cer:hover,
@@ -1254,6 +1260,82 @@ opacity: 0.5;
 
 
 
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /*overflow: auto;  Enable scroll if needed */
+ /* background-color: rgb(0,0,0);  Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  overflow: hidden;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -1383,6 +1465,9 @@ opacity: 0.5;
   }
 }
 @media screen and (max-width: 776px) {
+  .modal-content {
+    width: 100%;
+  }
   .work_container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;

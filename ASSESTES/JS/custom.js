@@ -160,4 +160,32 @@ for (var i = 0; i < btns.length; i++) {
   
   });
 }
+var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    const img = document.querySelectorAll("#myImg");
+    var con = document.querySelector(".container");
 
+    var captionText = document.getElementById("caption");
+    console.log(img)
+    img.forEach((img, index) => {// index will be current button index
+        img.addEventListener("click", function(e) {
+            modal.style.display="block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            //con.style.display="none"
+            // document.querySelector("#services").style.zIndex="0";
+            // document.querySelector("#portfolio").style.zIndex="0";
+            // document.querySelector("#Blog").style.zIndex="0";
+            // document.querySelector("#testimonial").style.zIndex="0";
+            // document.querySelector("#contact").style.zIndex="0";
+          console.log(e.target, index);
+        });
+    })
+
+    // Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
