@@ -197,6 +197,8 @@ document.addEventListener("click", (e) => {
 
         toggleProtfolioPopup();
         protfolioItemDetails(e.target.parentElement);
+        const element = document.getElementById("projects");
+        element.scrollTop = 10;
     }
 })
 
