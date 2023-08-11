@@ -30,6 +30,7 @@ inputs.forEach((input) => {
 
 
 
+
 // Get the button
 let mybutton = document.getElementById("top_button");
 
